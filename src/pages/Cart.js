@@ -32,7 +32,10 @@ const Cart = () => {
           )
         }
       })}
-      <button className='absolute top-5 left-5 white bg-white px-4 py-2'>Total : ${state.total}</button>
+      <div className='absolute top-5 left-5'>
+      <button className='text-white bg-black px-4 py-2'>Total : ${state.total}</button>
+      <button className='bg-stone-200 px-2 ml-2 shadow-black shadow-md' onClick={()=>dispatch({type:"ClearTotal"})}>clear</button>
+      </div>
       </div>
     </>
   )
