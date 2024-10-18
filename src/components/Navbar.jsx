@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { opticsData } from '../context/Usecontext'
 
 const Navbar = () => {
-  const {state,dispatch} = useContext(opticsData)
+  const { state } = useContext(opticsData)
   return (
     <div className='flex flex-row justify-evenly mt-2 py-4'>
       <Link to="/">Home</Link>

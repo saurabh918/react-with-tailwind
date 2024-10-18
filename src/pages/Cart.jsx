@@ -8,7 +8,6 @@ import { storeData } from '../Data'
 const Cart = () => {
   const {state,dispatch} = useContext(opticsData)
   const data = storeData
-  console.log(data)
 
   return (
     <>
@@ -19,17 +18,17 @@ const Cart = () => {
         if(prod) {
           prod.qty = 1; //default value
           const handleQty = () => {
-          prod.qty = document.getElementsByClassName("qty" + prod.id)[0].value;
-          console.log(prod.qty)
+          prod.qty = document.querySelectorAll(".qty" + prod.id)[0].value;
           }
           const onBuyBtnClick = () => {
             let price = prod.price * prod.qty;
             dispatch({type: "Buy",payload: price})
-            console.log(price)
           }
           return (
-            <Product item={prod} buyButton={true} handleQty={handleQty} onBuyBtnClick={onBuyBtnClick} key={p.id}/>
+            <Product item={prod} buyButton={true} handleQty={handleQty} onBuyBtnClick={onBuyBtnClick} key={p}/>
           )
+        } else {
+          return null
         }
       })}
       <div className='absolute top-5 left-5'>
