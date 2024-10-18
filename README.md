@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Optic Store Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a **React-based optic store website** where users can browse and purchase optic products. The website allows users to add products to the cart, select the desired quantity, and view the total amount spent based on their purchases. The application uses **useReducer** and **useContext** for state management and is styled with **Tailwind CSS**.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Browse Products**: Users can view a list of available optic products.
+- **Add to Cart**: Users can add products to the cart and specify the quantity they want to purchase.
+- **Update Cart**: The total amount is dynamically updated as users add products to the cart or adjust quantities.
+- **Real-Time Total Calculation**: The total price of items in the cart is displayed and updated in real-time, ensuring accurate calculation when users buy multiple products with different quantities.
+- **Responsive Design**: The application is fully responsive and works across all devices.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React JS**: For building the user interface and managing state.
+- **useReducer** & **useContext**: For handling state management of the shopping cart and products.
+- **Tailwind CSS**: For styling the components with a utility-first CSS framework.
+- **JavaScript**: For handling logic and calculations in the cart.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed on your system:
 
-### `npm run build`
+- **Node.js** (>= 12.x)
+- **npm** or **yarn**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/optic-store-website.git
+   cd optic-store-website
